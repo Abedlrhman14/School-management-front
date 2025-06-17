@@ -1,13 +1,175 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+
+.font {
+  font-family: "Edu VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  /* background-color: red; */
+  margin-top:20px;
+}
+.main-photo{
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  background-color: yellow;
+  /* margin-left: 20px; */
+  margin-top: 60px;
+}
+.main-photo img{
+  height: 100%;
+  width: 100%;
+}
+.main2{
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  background-color: white;
+  margin-left:60%;
+  margin-top: 60px;
+}
+.main2 h1{
+  font-size: 40px;
+  margin-top: 80px;
+}
+.main2 p {
+  width: 70%;
+  margin-top: 40px;
+  font-weight: 20px;
+}
+.p1{
+  position: absolute;
+  margin-left: 25%;
+}
+.main Button{
+  background-color: mediumvioletred;
+  margin-left:1%;
+  margin-right: 2%;
+  margin-top: 40px;
+}
+.main-register{
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin-top: 5%;
+  /* background-color: red; */
+}
+.register-form{
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  margin-top:30px;
+  margin-left: 20px;
+  background-color: rgb(240, 238, 237);
+  border-radius: 5%;
+}
+.register-photo{
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  /* background-color: blue; */
+  margin-left: 50%;
+}
+.register-photo img{
+  width: 75%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.input-register{
+  margin-left: 20%;
+  margin-top: 7%;
+  
+  
+}
+.main-register p{
+  margin-left: 20%;
+  margin-top:4%;
+}
+.input-register{
+    width: 400px;
+    border-style: 3px solid;
+}
+/* .form-control:hover{
+  background-color: rgb(204, 244, 255);
+  font-size: 18px;
+} */
+ .password{
+  position: relative;
+ }
+.password i{
+ position: absolute;
+    margin-top:-26px;
+   margin-left: 92%;
+}
+.register-form Button{
+  margin-top: 15%;
+  margin-left:40%;
+}
+.main-login{
+    position: relative;
+  width: 100%;
+  height: 800px;
+  /* margin-top: 1%; */
+  background-color: rgb(250, 247, 247);
+}
+.login-form{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  margin-left: 6%;
+  /* background-color: black; */
+}
+.login-photo{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  /* background-color: blue; */
+  margin-left: 50%;
+}
+.login-photo img{
+  width: 60%;
+  margin-top: 17%;
+  margin-left: 20%;
+}
+.input-login{
+    width: 400px;
+    margin-left: 20%;
+    margin-top: 5%;
+    
+}
+.login-form p {
+  margin-top:20px;
+  text-align: center;
+  margin-right: 40px;
+}
+.login-form h1 {
+  margin-top:15%;
+  text-align: center;
+  margin-right: 70px;
+}
+.main-login Button{
+  /* margin-top:5%; */
+  margin-left:-6%;
+  width: 300px;
+}
+.go-register{
+  text-decoration: none;
+  color: rgb(31, 85, 139);
+}
+ .password{
+  position: relative;
+ }
+.password i{
+ position: absolute;
+    margin-top:-26px;
+   margin-left: 92%;
 }
