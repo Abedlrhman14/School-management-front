@@ -1,14 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
 
-
 .font {
   font-family: "Edu VIC WA NT Hand", cursive;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
 }
-
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
 .main{
   position: relative;
   width: 100%;
@@ -172,4 +174,99 @@
  position: absolute;
     margin-top:-26px;
    margin-left: 92%;
+}
+.sidbar{
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: black;
+  background-color: #f3f4f6;
+
+}
+.home{
+  margin-top: 30px;
+  color: black;
+}
+.home i {
+    color:  rgb(99, 94, 94);
+}
+.home p{
+  color:  rgb(143, 122, 122);
+}
+.a{
+  text-decoration: none !important;
+  color: inherit;
+}
+.profile{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: rgb(66, 118, 238);
+  border-radius: 30px;
+}
+.profile-form{
+  position: absolute;
+  width: 60%;
+  height: 600px;
+  /* background-color:white; */
+  margin-left:20%;
+  margin-top: 2%;
+  /* border: black solid 1px; */
+}
+.profile-form img{
+  position: relative;
+  width: 100px;
+  height: 170px;
+  border-radius: 60% ;
+  margin-left: 300%;
+  margin-bottom: 300%;
+  z-index: 3;
+}
+.form-info{
+  position: absolute  ;
+  width: 60%;
+  height: 400px;
+  margin-left:19% ;
+  margin-top:20%;
+  text-align:center;
+  font-size: 22px;
+  font-style: initial;
+  
+  background-color: white;
+  border-radius: 10%;
+  border: black solid 1px;
+}
+.form-word{
+  position: absolute;
+  margin-top: 5%;
+  width: 100%;
+}
+.form-info p{
+    align-items: center;
+     margin-top: 2%;
+     font-size: 22px;
+    font-style: initial;
+    margin-left: -2%;
+}
+.supercard img{
+  width: 90px;
+}
+.navbar{
+  width: 1291px;
+  margin-left: -2%;
+  margin-top: -20px;
+  /* background-color: mediumvioletred; */
+  background: #343a40;
+}
+.navbar img{
+  width: 30px;
+  border-radius: 30px;
+}
+.classNav{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* background: black; */
 }

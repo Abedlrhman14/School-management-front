@@ -1,10 +1,11 @@
-import axios from 'axios';
+import axios from './axiosInstance';
 import React from 'react'
 import { useState } from 'react'
 import { Button, Form} from 'react-bootstrap';
 import { useNavigate ,Navigate, Link } from 'react-router-dom';
 import { toast , ToastContainer } from 'react-toastify';
 import photo from '../assets/cartoon-happy-school-boy-uniform-giving-thumb-up_29190-4932.avif'
+import { jwtDecode } from 'jwt-decode';
 const Login = () => {
     const [email , setemail] = useState('');
     const [password , setpassword] = useState('');
@@ -27,14 +28,23 @@ const Login = () => {
           return;
         }
         try { 
-             const response =await axios.post('http://school.test/api/login',{
+             const response =await axios.post('/login',{
                email,
               password,
         });
-          toast.success('login successfuly');
-          setTimeout(() => {
-            navigate('/');
-          }, 1500);
+        const token = response.data.token
+        localStorage.setItem('token' , token)
+        const decode = jwtDecode(token)
+      const role = response.data.user.role;
+      localStorage.setItem('role', role); 
+      console.log('Token saved:', localStorage.getItem('token')); // Debugging
+    console.log('Role saved:', localStorage.getItem('role')); // Debugging
+        toast.success('login successfuly');
+        if(role === 'super_admin'){
+          navigate('/main')
+        } if(role ==='teacher'){
+              navigate('/teacherDashboard');
+        }
             }catch(err){
                 console.error('Login error',err);
                 if(err.response && err.response.data){
