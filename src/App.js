@@ -16,6 +16,7 @@ import HomeSuper from './pages/HomeSuperAdmin';
 import AdminClass from './pages/ClassAdminpage'
 import TeacherDashboard from './pages/TeacherDashboard';
 import ClassDetailes from './pages/ClassDetailes';
+import Students from './pages/Students';
 // import RoleProtectedRoute  from './Component/RoleProtectedRoute'
 function App() {
     const location = useLocation();
@@ -39,6 +40,7 @@ function App() {
             <Route path='/adminclass' element={<AdminClass></AdminClass>}></Route>
             <Route path='/teacherDashboard' element={<TeacherDashboard></TeacherDashboard>}></Route>
             <Route path='/class-detailes/:id' element={<ClassDetailes></ClassDetailes>}></Route>
+            <Route path='/students' element={<Students></Students>}></Route>
        </Routes>
     </>
      

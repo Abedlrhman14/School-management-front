@@ -48,7 +48,7 @@ const AppSidebar = () => {
                     </NavLink>
               )}
             <NavLink
-                to={'/main'}
+                to={'/students'}
                 end
                 className={({isActive})=>
                 `home a d-flex align-items-center px-3 py-2  ${isActive ? 'bg-light text-white rounded' : ''}`
